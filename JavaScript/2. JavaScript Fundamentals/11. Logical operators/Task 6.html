@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check the range outside</title>
+  </head>
+  <body>
+    Write an if condition to check that age is NOT between 14 and 90
+    inclusively. Create two variants: the first one using NOT !, the second one
+    – without it.
+
+    <script>
+      let age = prompt("Enter age");
+
+      if (age <= 14 && age >= 90) {
+        alert("you are outside");
+      } else {
+        alert("You are inside");
+      }
+
+      // Second method
+
+      if (!(age = 14 && age <= 90)) {
+        alert("You are outside the age limit");
+      } else {
+        alert("You are inside the age limit");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A question about "if"</title>
+  </head>
+  <body>
+    Which of these alerts are going to execute? What will the results of the
+    expressions be inside if(...)?
+
+    <script>
+      if (-1 || 0) alert("first"); // The result will be"first"
+      if (-1 && 0) alert("second"); // d'not run
+      if (null || (-1 && 1)) alert("third"); //the result will be "third"
+    </script>
+  </body>
+</html>
