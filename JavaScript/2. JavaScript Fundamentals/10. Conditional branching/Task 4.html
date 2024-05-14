@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewrite 'if' into '?'</title>
+  </head>
+  <body>
+    Rewrite this if using the conditional operator '?':
+
+    <script>
+      let result;
+
+      if (a + b < 4) {
+        result = "Below";
+      } else {
+        result = "Over";
+      }
+
+    //   Rewrite
+
+    let result1 = (a + b < 4) ? "Below" : "Over";
+
+    </script>
+  </body>
+</html>
