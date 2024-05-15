@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewrite the function using '?' or '||'</title>
+  </head>
+  <body>
+    The following function returns true if the parameter age is greater than 18.
+    Otherwise it asks for a confirmation and returns its result.
+
+    <script>
+      function checkAge(age) {
+        if (age > 18) {
+          return true;
+        } else {
+          return confirm("Did parents allow you?");
+        }
+      }
+
+      // Rewrite Using a question mark operator ?
+
+      function checkAge(age) {
+        let rtn = (age > 18) ? true : confirm("Did parents allow you?");
+        return rtn;
+      }
+
+      //   Rewrite Using OR ||
+
+      function checkAge(age) {
+
+  
+        let rtn = (age > 18) || confirm("Did parents allow you?");
+
+        return rtn;
+      }
+    </script>
+  </body>
+</html>
