@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check for emptiness</title>
+  </head>
+  <body>
+    Write the function isEmpty(obj) which returns true if the object has no
+    properties, false otherwise. Should work like that:
+
+    <script>
+      function checkSpace(a) {
+        for (let key in a) {
+          return false;
+        }
+        return true;
+      }
+
+      let a = {
+        name: "Prince",
+        age: 26,
+      };
+      checkSpace(a);
+    </script>
+  </body>
+</html>
