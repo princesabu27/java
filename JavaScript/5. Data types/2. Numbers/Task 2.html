@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repeat until the input is a number</title>
+  </head>
+  <body>
+    Create a function readNumber which prompts for a number until the visitor
+    enters a valid numeric value. The resulting value must be returned as a
+    number. The visitor can also stop the process by entering an empty line or
+    pressing “CANCEL”. In that case, the function should return null.
+
+    <script>
+      function checkNumber() {
+        let num = getNumber();
+
+        if (num == NaN) {
+          num = getNumber();
+          if (num != NaN) {
+            alert("The number is" + num);
+          } else {
+          }
+        } else {
+          alert("the number is " + num);
+        }
+      }
+
+      function getNumber() {
+        return +prompt("Enter number", 1);
+      }
+
+      checkNumber();
+    </script>
+  </body>
+</html>
