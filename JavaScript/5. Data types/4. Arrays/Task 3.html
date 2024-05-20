@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calling in an array context</title>
+  </head>
+  <body>
+    What is the result? Why?
+    <script>
+      let arr = ["a", "b"];
+
+      arr.push(function () {
+        alert(this);
+      });
+
+      arr[2](); // a,b,function(){alert(this)},  because the this is called inside the function. so the function calls each and every items inside the array.
+    </script>
+  </body>
+</html>
