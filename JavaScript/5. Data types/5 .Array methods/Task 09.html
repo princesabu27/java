@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort users by age</title>
+  </head>
+  <body>
+    Write the function sortByAge(users) that gets an array of objects with the
+    age property and sorts them by age. For instance:
+    <script>
+      let john = { name: "John", age: 25 };
+      let pete = { name: "Pete", age: 30 };
+      let mary = { name: "Mary", age: 28 };
+
+      let arr = [pete, john, mary];
+
+      //   [
+      //     { name: "john", age: 25 },
+      //     { name: "Pete", age: 30 },
+      //     { name: " Mary", age: 28 },
+      //   ];
+      function sortByAge(arr) {
+        arr.sort((a, b) => a.age - b.age);
+      }
+
+      sortByAge(arr);
+
+      now: [john, mary, pete];
+      alert(arr[0].name); // John
+      alert(arr[1].name); // Mary
+      alert(arr[2].name); // Pete
+    </script>
+  </body>
+</html>
