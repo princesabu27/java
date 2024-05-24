@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count properties</title>
+  </head>
+  <body>
+    <h1>Count properties</h1>
+
+    <!-- Write a function count(obj) that returns the number of properties in the object:
+
+let user = {
+  name: 'John',
+  age: 30
+};
+
+alert( count(user) ); // 2
+Try to make the code as short as possible.
+
+P.S. Ignore symbolic properties, count only “regular” ones. -->
+
+    <script>
+      function count(obj) {
+        return Object.keys(obj).length;
+      }
+
+      let user = {
+        name: "John",
+        age: 30,
+      };
+
+      console.log(count(user));
+    </script>
+  </body>
+</html>
